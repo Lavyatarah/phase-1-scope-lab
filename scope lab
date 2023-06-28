@@ -1,0 +1,21 @@
+var customerName;
+
+function upperCaseCustomerName() {
+    if (customerName) {
+        return customerName.toUpperCase();
+    }
+}
+
+function setBestCustomer() {
+    bestCustomer = 'not bob';
+}
+
+function overwriteBestCustomer() {
+    bestCustomer = 'new value';
+}
+
+const leastFavoriteCustomer = 'initial value';
+
+function changeLeastFavoriteCustomer() {
+    leastFavoriteCustomer = 'new value'; // This will throw an error as you cannot reassign a constant variable.
+}
